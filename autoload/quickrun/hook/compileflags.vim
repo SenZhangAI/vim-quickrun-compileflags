@@ -22,15 +22,11 @@ function! s:hook.on_module_loaded(session, context) abort
   let ocmdopt = a:session.config.cmdopt
   let fileopt = ''
 
-  let l:file = expand('%:p:h') + '/' + sefl.confg.cmdoptfile
+  let l:file = expand('%:p:h') . '/' . self.config.cmdoptfile
   if !empty(l:file)
     let l:lines = readfile(l:file)
-    let a:session.config.cmdopt = ocmdopt + ' ' + join(l:lines, ' ')
+    let a:session.config.cmdopt = ocmdopt . ' ' . join(l:lines, ' ')
   endif
-  let g:conffffff = a:session.config.cmdopt
-  redraw
-  echoerr g:conffffff
-  echom g:conffffff
 endfunction
 
 function! quickrun#hook#compileflags#new() abort
