@@ -1,0 +1,22 @@
+*quickrun-compileflags.txt*	An Extension of quickrun for using compileflags from file
+
+Version: 0.0.1
+Author: Sen Zhang <szhang.hust@gmail.com>
+License: zlib License
+
+==============================================================================
+CONTENTS
+
+USAGE			|quickrun-compileflags-usage|
+
+==============================================================================
+USAGE					*quickrun-compileflags-usage*
+
+						*quickrun-neovim-job-example*
+
+>
+        " To use this, you specify the hook on g:quickrun_config
+        let g:quickrun_config['_'][''] = 'jobstart' "Set as default runner
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
